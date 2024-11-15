@@ -1,0 +1,6 @@
+exclude .gitignore
+global-include *.txt *.rst *.xml *.xsl *.png
+include src/launchpadlib/docs/Makefile src/launchpadlib/docs/conf.py
+prune src/launchpadlib/docs/_build
+prune .tox
+prune dist

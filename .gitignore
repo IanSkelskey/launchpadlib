@@ -1,0 +1,13 @@
+*.egg-info
+*.pyc
+.tox
+bin
+build
+develop-eggs
+dist
+src/launchpadlib/docs/_build
+TAGS
+tags
+_trial_temp
+__pycache__
+.coverage

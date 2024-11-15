@@ -1,0 +1,21 @@
+pipeline:
+  - lint
+  - tests
+
+jobs:
+  lint:
+    architectures: amd64
+    packages:
+      - tox
+      - git
+    snaps:
+      - name: go
+        classic: true
+    run: tox -e lint
+    series: focal
+  tests:
+    architectures: amd64
+    packages:
+      - tox
+    run: tox -e py38
+    series: focal
